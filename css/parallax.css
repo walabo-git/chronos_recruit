@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* ロード時にフェード */
+.pl_load {opacity : 0;}
+.pl_load.scrollin {opacity : 1;}
+
+/* パララックスを有効にする */
+.pl_true {
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+/* ふわりと現れる */
+.pl_fade {opacity: 0;}
+.pl_fade.scrollin,.scrollin .pl_fade {opacity: 1;}
+
+
+/* 上・下・右・左から現れる */
+.pl_top,
+.pl_bottom,
+.pl_left {
+  opacity: 0;
+}
+.pl_top {transform: translate(0, -50px);}
+.pl_bottom {transform: translate(0, 50px);}
+.pl_left {transform: translate(-50px, 0);}
+.pl_top.scrollin,.scrollin .pl_top,
+.pl_bottom.scrollin,.scrollin .pl_bottom,
+.pl_left.scrollin,.scrollin .pl_left {
+  opacity: 1;
+  transform : translate(0, 0);
+}
+
+/* 時差で現れる */
+.pl_2n,.scrollin .pl_2n {transition: opacity 1.5s .5s, transform 1.5s .5s;}
+.pl_3n,.scrollin .pl_3n {transition: opacity 1.5s 1s, transform 1.5s 1s;}
+.pl_4n,.scrollin .pl_4n {transition: opacity 1.5s 1.5s, transform 1.5s 1.5s;}
+.pl_5n,.scrollin .pl_5n {transition: opacity 1.5s 2s, transform 1.5s 2s;}
+.pl_6n,.scrollin .pl_6n {transition: opacity 1.5s 2.5s, transform 1.5s 2.5s;}
+
+/* 回転して現れる */
+.pl_roll {
+  transform: scale(0) rotateZ(0deg);
+}
+.pl_roll.scrollin,.scrollin .pl_roll {
+  transform: scale(1) rotateZ(360deg);
+}
