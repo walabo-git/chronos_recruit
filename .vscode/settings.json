@@ -1,0 +1,128 @@
+{
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?　 ",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "isAsync": true,
+        "cmd": "utils/runonsave.sh"
+      }
+    ]
+  },
+  "svg.preview.background": "editor",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "black-formatter.args": ["--line-length=120"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    "*.jb": "ruby"
+  },
+  "files.watcherExclude": {
+    "**/vendor/*/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/docker/db/data/**": true,
+    "**/docker/redis/data/**": true,
+    "**/log/**": true,
+    "**/storage/**": true,
+    "**/tmp/**": true,
+    "**/coverage/**": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "typescript.tsdk": "./project_src/node_modules/typescript/lib",
+  "cSpell.enabledLanguageIds": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "less",
+    "markdown",
+    "plaintext",
+    "scss",
+    "text",
+    "ruby",
+    "yaml",
+    "yml",
+    "haml",
+    "python",
+    "typescriptreact",
+    "typescript"
+  ],
+  "eslint.enable": false,
+  "cSpell.words": [
+    "accountings",
+    "antd",
+    "appendonly",
+    "axios",
+    "binread",
+    "cellw",
+    "chakra",
+    "chronos",
+    "datetime",
+    "FAISS",
+    "haml",
+    "hankaku",
+    "Hashie",
+    "headoffice",
+    "hookform",
+    "IFNULL",
+    "JSON_OBJECTAGG",
+    "kisogawa",
+    "KYUSYU",
+    "Masterable",
+    "microcms",
+    "mizuya",
+    "moji",
+    "Mongoid",
+    "mysqld",
+    "Nashi",
+    "officedocument",
+    "OPENAI",
+    "openpyxl",
+    "openxmlformats",
+    "Operateable",
+    "pirelli",
+    "pyxl",
+    "ROLLUP",
+    "Sluggable",
+    "spreadsheetml",
+    "strftime",
+    "suji",
+    "swal",
+    "tanstack",
+    "urlsafe",
+    "vite",
+    "wday",
+    "webp",
+    "windpower",
+    "zenkaku"
+  ],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "*/workflows/deploy.yml"
+  }
+}
