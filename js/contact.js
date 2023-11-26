@@ -12,7 +12,7 @@
       const message = `ご応募いただき、誠にありがとうございます。弊社​​に興味をお寄せいただき、大変嬉しく思います。\n\nこのメールは弊社の求人ご応募を受け付けたことを確認する自動返信メールです。\n\nご連絡いただきました内容をもとに、後日弊社採用担当よりご連絡いたしますので今しばらくお待ちくださいませ。\n\n\n【氏名】${name}\n【年齢】${age}\n【現在のご職業】${job}\n【メールアドレス】${email}\n【連絡先電話番号】${phoneNumber}\n【住所】${address}\n\n\n========================================\n株式会社クロノス\n〒491-0871 愛知県一宮市浅野字長池51\n\nhttps://chronos2015.co.jp/\nTEL: 0586-75-0910\n========================================`;
       try {
         await fetch(
-          "https://jac8mybidc.execute-api.ap-northeast-1.amazonaws.com/prod/send-email",
+          "https://3hv40o6c8h.execute-api.ap-northeast-1.amazonaws.com/prod/send-email",
           {
             method: "POST",
             headers: {
