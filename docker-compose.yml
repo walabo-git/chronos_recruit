@@ -1,11 +1,14 @@
 version: "3"
 services:
   service_jekyll:
-    image: jekyll/jekyll:4.2.0
+    build:
+      context: .
+      dockerfile: ./docker/jekyll/Dockerfile
     container_name: local_jekyll
     volumes:
       - ./:/srv/jekyll
-    command: jekyll serve -s /srv/jekyll --watch --verbose --trace
+    command: jekyll serve -s /srv/jekyll --livereload
     init: true
     ports:
-      - "4000:4000"
+      - 4000:4000
+      - 35729:35729
