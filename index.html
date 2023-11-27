@@ -1,7 +1,11 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta content="noindex" name="robots" />
+    {% include analytics.html %}
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -63,6 +67,16 @@
     />
   </head>
   <body class="drawer drawer--right drawer-close" style="overflow: auto">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJ2LZPRT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="wrap sp_bg_contents">
       <a id="top" name="top"></a>
       <div id="telpopup-frame" style="display: none">
@@ -70,9 +84,7 @@
           <div id="telpopup-gotel">
             <p><strong id="telpopup-shop">株式会社クロノス</strong></p>
             <p id="telpopup-stelb">
-              <a
-                href="tel:0586-75-0910"
-                onclick="ga('send', 'event', 'cv', 'click', 'tel'); ADJOBCV.cv('tel')"
+              <a href="tel:0586-75-0910"
                 ><i class="fas fa-phone-volume fa-fw"></i>0586-75-0910</a
               >
             </p>
@@ -239,12 +251,6 @@
                 ><span class="marker2">職種詳細ページ</span></a
               >
             </div>
-            <!--<div class="kv_recruit_area_contents_button">
-                                        <a href="detail1.html" class="btn btn-offer btn-content"><i class="fas fa-map-marker-alt fa-2x"></i><span class="marker2">エリア①</span></a>
-                            <a href="detail2.html" class="btn btn-offer btn-content"><i class="fas fa-map-marker-alt fa-2x"></i><span class="marker2">エリア②</span></a>
-                            <a href="detail3.html" class="btn btn-offer btn-content"><i class="fas fa-map-marker-alt fa-2x"></i><span class="marker2">エリア③</span></a>
-                            <a href="detail4.html" class="btn btn-offer btn-content"><i class="fas fa-map-marker-alt fa-2x"></i><span class="marker2">エリア④</span></a>
-                                    </div>-->
           </div>
           <!--/kv_recruit_area_contents_list-->
         </div>
