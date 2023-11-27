@@ -5,7 +5,6 @@ services:
     container_name: local_jekyll
     volumes:
       - ./:/srv/jekyll
-      - ./output/_site:/srv/jekyll/_site
     command: jekyll serve -s /srv/jekyll --watch --verbose --trace
     init: true
     ports:
